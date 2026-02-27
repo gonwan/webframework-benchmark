@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Map;
 
+
 @RestController
 class HelloController {
 
@@ -29,6 +30,7 @@ class HelloController {
 
 }
 
+/* Do not add additional overhead to the default configuration */
 //@Component
 class ContentLengthFilter implements Filter {
     @Override
