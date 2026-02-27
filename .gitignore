@@ -34,3 +34,6 @@ build/
 
 ### Binary Files ###
 *.o
+
+### Go Files ###
+go.sum
