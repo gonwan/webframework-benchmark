@@ -9,6 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringBoot Benchmark</name>
     <modules>
+        <module>spring-webflux</module>
         <module>spring-webmvc</module>
         <module>spring-webmvc-undertow</module>
     </modules>
