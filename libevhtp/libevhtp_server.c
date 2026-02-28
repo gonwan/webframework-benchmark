@@ -12,7 +12,7 @@ static void textcb(evhtp_request_t *req, void *arg)
 {
     const char *str = "Hello, World!";
     evbuffer_add(req->buffer_out, str, strlen(str));
-    evhtp_headers_add_header(req->headers_out, evhtp_header_new("Content-Type", "text/html; charset=utf-8", 0, 0));
+    evhtp_headers_add_header(req->headers_out, evhtp_header_new("Content-Type", "text/plain", 0, 0));
     evhtp_send_reply(req, EVHTP_RES_OK);
 }
 

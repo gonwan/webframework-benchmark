@@ -23,7 +23,7 @@ func main() {
 		ctx.Response.Header.Del("Server")
 	})
 	h.GET("/text", func(ctx context.Context, c *app.RequestContext) {
-		c.Data(consts.StatusOK, consts.MIMETextHtml, []byte("Hello, World!"))
+		c.Data(consts.StatusOK, consts.MIMETextPlain, []byte("Hello, World!"))
 		//c.String(consts.StatusOK, "Hello, World!")
 	})
 	h.GET("/json", func(ctx context.Context, c *app.RequestContext) {

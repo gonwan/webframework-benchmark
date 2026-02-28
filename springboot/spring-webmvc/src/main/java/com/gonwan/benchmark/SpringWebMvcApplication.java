@@ -18,7 +18,7 @@ import java.util.Map;
 @RestController
 class HelloController {
 
-    @GetMapping(value = "/text", produces = MediaType.TEXT_HTML_VALUE)
+    @GetMapping(value = "/text", produces = MediaType.TEXT_PLAIN_VALUE)
     public String text() {
         return "Hello, World!";
     }

@@ -45,7 +45,7 @@ handle_request(
     if (req.target() == "/json") {
         return send_content(http::status::ok, "application/json", "{\"Message\":\"Hello, World!\"}");
     } else {
-        return send_content(http::status::ok, "text/html; charset=utf-8", "Hello, World!");
+        return send_content(http::status::ok, "text/plain", "Hello, World!");
     }
 }
 

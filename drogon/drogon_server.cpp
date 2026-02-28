@@ -9,7 +9,7 @@ int main()
         "/text",
         [](const HttpRequestPtr &,
            std::function<void(const HttpResponsePtr &)> &&callback) {
-            auto resp = HttpResponse::newHttpResponse();
+            auto resp = HttpResponse::newHttpResponse(k200OK, CT_TEXT_PLAIN);
             resp->setBody("Hello, World!");
             callback(resp);
         },
