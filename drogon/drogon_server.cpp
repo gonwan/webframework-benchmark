@@ -26,6 +26,7 @@ int main()
         },
         {Get});
     LOG_INFO << "drogon server running at 8099";
+    fflush(stdout);  /* flush for docker logs */
     app().addListener("0.0.0.0", 8099)
         .setThreadNum(4)
         .setMaxConnectionNum(10000)

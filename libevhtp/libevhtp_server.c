@@ -21,7 +21,7 @@ static void jsoncb(evhtp_request_t *req, void *arg)
 {
     const char *str = "{\"message\":\"Hello, World!\"}";
     evbuffer_add(req->buffer_out, str, strlen(str));
-    evhtp_headers_add_header(req->headers_out, evhtp_header_new("Content-Type", "application/json; charset=utf-8", 0, 0));
+    evhtp_headers_add_header(req->headers_out, evhtp_header_new("Content-Type", "application/json", 0, 0));
     evhtp_send_reply(req, EVHTP_RES_OK);
 }
 
@@ -42,6 +42,7 @@ int main()
 
     int port = 8099;
     printf("libevhtp server running at %d\n", port);
+    fflush(stdout);  /* flush for docker logs */
     evhtp_bind_socket(htp, "0.0.0.0", port, 2048);
     event_base_loop(evbase, 0);
 

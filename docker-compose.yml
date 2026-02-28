@@ -1,0 +1,58 @@
+# sudo apt install docker-compose-v2
+services:
+  libevhtp:
+    image: gonwan/libevhtp_server:1.0.0
+    ports:
+      - "9001:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  drogon:
+    image: gonwan/drogon_server:1.0.0
+    ports:
+      - "9002:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  gin:
+    image: gonwan/gin_server:1.0.0
+    ports:
+      - "9011:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  gofiber:
+    image: gonwan/gofiber_server:1.0.0
+    ports:
+      - "9012:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  spring-webflux:
+    image: gonwan/spring-webflux:1.0.0
+    ports:
+      - "9021:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  spring-webmvc:
+    image: gonwan/spring-webmvc:1.0.0
+    ports:
+      - "9022:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  spring-webmvc-undertow:
+    image: gonwan/spring-webmvc-undertow:1.0.0
+    ports:
+      - "9023:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
