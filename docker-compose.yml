@@ -16,6 +16,14 @@ services:
       resources:
         limits:
           cpus: 4
+  beast:
+    image: gonwan/beast_server:1.0.0
+    ports:
+      - "9003:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
   gin:
     image: gonwan/gin_server:1.0.0
     ports:

@@ -1,5 +1,4 @@
 // gcc -O2 libevhtp_server.c -o libevhtp_server -levent -levhtp
-// ~54w/s, libevhtp does not send the server & date headers...
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>

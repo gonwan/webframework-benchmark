@@ -1,5 +1,4 @@
 // g++ -O2 drogon_server.cpp -o drogon_server -I/usr/include/jsoncpp -ljsoncpp -ltrantor -ldrogon
-// ~33w/s, slightly slower than go-gin server. No difference after disabling server & date headers...
 #include <drogon/drogon.h>
 using namespace drogon;
 
