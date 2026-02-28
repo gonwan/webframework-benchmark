@@ -4,12 +4,12 @@ curr_dir="${PWD}"
 
 function run_package()
 {
-  dir="$1"
-  echo "##################################################"
-  echo "# Packaging ${dir}                                "
-  echo "##################################################"
-  cd "${dir}" && ./package.sh
-  cd "${curr_dir}"
+    dir="$1"
+    echo "##################################################"
+    echo "# Packaging ${dir}                                "
+    echo "##################################################"
+    cd "${dir}" && ./package.sh
+    cd "${curr_dir}"
 }
 
 run_package nginx
