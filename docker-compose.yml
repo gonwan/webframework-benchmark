@@ -32,6 +32,14 @@ services:
       resources:
         limits:
           cpus: 4
+  hertz:
+    image: gonwan/hertz_server:1.0.0
+    ports:
+      - "9013:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
   spring-webflux:
     image: gonwan/spring-webflux:1.0.0
     ports:

@@ -23,9 +23,9 @@ func main() {
 		})
 	})
 	addr := ":8099"
-	log.Printf("Starting fiber server at %s..", addr)
+	log.Printf("Starting gofiber server at %s..", addr)
 	err := app.Listen(addr)
 	if err != nil {
-		log.Printf("Failed to start fiber server: %v", err)
+		log.Printf("Failed to start gofiber server: %v", err)
 	}
 }
