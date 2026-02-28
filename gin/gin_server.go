@@ -17,7 +17,7 @@ func main() {
 		c.Writer.Header()["Date"] = nil
 	})
 	r.GET("/text", func(c *gin.Context) {
-		c.Data(http.StatusOK, gin.MIMEPlain, []byte("Hello, World!"))
+		c.Data(http.StatusOK, gin.MIMEHTML, []byte("Hello, World!"))
 		//c.String(http.StatusOK, "Hello, World!")
 	})
 	r.GET("/json", func(c *gin.Context) {

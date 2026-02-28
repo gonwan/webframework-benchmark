@@ -14,7 +14,7 @@ func main() {
 		DisableDefaultDate: true,
 	})
 	app.Get("/text", func(c *fiber.Ctx) error {
-		c.Set(fiber.HeaderContentType, fiber.MIMETextPlain)
+		c.Set(fiber.HeaderContentType, fiber.MIMETextHTMLCharsetUTF8)
 		return c.SendString("Hello, World!")
 	})
 	app.Get("/json", func(c *fiber.Ctx) error {

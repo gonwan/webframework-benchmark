@@ -1,5 +1,13 @@
 # sudo apt install docker-compose-v2
 services:
+  nginx:
+    image: gonwan/nginx_server:1.0.0
+    ports:
+      - "9000:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
   libevhtp:
     image: gonwan/libevhtp_server:1.0.0
     ports:

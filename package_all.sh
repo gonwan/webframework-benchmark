@@ -12,6 +12,7 @@ function run_package()
   cd "${curr_dir}"
 }
 
+run_package nginx
 run_package libevhtp
 run_package drogon
 run_package beast
