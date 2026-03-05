@@ -19,7 +19,7 @@ if (isPrimary) {
             if (url.pathname === "/text") {
                 response = new Response("Hello, World!");
             } else if (url.pathname === "/json") {
-                response = Response.json({ Message: "Hello, World!" });
+                response = Response.json({ message: "Hello, World!" });
             } else {
                 response = new Response("Not Found", { status: 404 });
             }

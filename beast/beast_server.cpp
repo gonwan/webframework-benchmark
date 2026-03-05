@@ -43,7 +43,7 @@ handle_request(
         return send_content(http::status::bad_request, "text/html", "Unknown HTTP-method");
     }
     if (req.target() == "/json") {
-        return send_content(http::status::ok, "application/json", "{\"Message\":\"Hello, World!\"}");
+        return send_content(http::status::ok, "application/json", "{\"message\":\"Hello, World!\"}");
     } else {
         return send_content(http::status::ok, "text/plain", "Hello, World!");
     }
