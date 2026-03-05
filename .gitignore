@@ -37,3 +37,6 @@ build/
 
 ### Go Files ###
 go.sum
+
+### Lock Files ###
+*.lock

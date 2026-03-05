@@ -104,3 +104,11 @@ services:
       resources:
         limits:
           cpus: 4
+  actix:
+    image: gonwan/actix_server:1.0.0
+    ports:
+      - "9051:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4

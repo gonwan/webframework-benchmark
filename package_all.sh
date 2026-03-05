@@ -25,3 +25,4 @@ run_package springboot/spring-webmvc-undertow
 run_package aspnetcore
 run_package node
 run_package bun
+run_package actix
