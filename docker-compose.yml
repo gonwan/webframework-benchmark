@@ -80,3 +80,27 @@ services:
       resources:
         limits:
           cpus: 4
+  aspnetcore:
+    image: gonwan/aspnetcore_server:1.0.0
+    ports:
+      - "9031:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  node:
+    image: gonwan/node_server:1.0.0
+    ports:
+      - "9041:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4
+  bun:
+    image: gonwan/bun_server:1.0.0
+    ports:
+      - "9042:8099"
+    deploy:
+      resources:
+        limits:
+          cpus: 4

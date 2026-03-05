@@ -22,3 +22,6 @@ run_package hertz
 run_package springboot/spring-webflux
 run_package springboot/spring-webmvc
 run_package springboot/spring-webmvc-undertow
+run_package aspnetcore
+run_package node
+run_package bun
