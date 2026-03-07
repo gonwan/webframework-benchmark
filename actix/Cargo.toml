@@ -20,3 +20,6 @@ zerofrom = "=0.1.5"
 [[bin]]
 name = "actix_server"
 path = "src/actix_server.rs"
+
+[profile.release]
+#lto = true
